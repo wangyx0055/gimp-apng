@@ -1,0 +1,368 @@
+commit a15c34bd99c53746e4ec23b980df674ece9e4a6d
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Sun Apr 25 22:27:33 2010 +0900
+
+    Update documents and date
+
+ HACKING         |   11 +++++++++--
+ NEWS            |    8 ++++++++
+ README          |   22 +++++++++++++++-------
+ TODO            |   12 ++++++------
+ src/file-apng.c |    2 +-
+ 5 files changed, 39 insertions(+), 16 deletions(-)
+
+commit 6ef468f76975903727bd73d4e1ee506c74321b3a
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Sun Apr 25 22:22:29 2010 +0900
+
+    Replace symbolic links to real files
+
+ COPYING           |  675
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ INSTALL           |  366 +++++++++++++++++++++++++++++-
+ po/Makefile.in.in |  218 +++++++++++++++++-
+ 3 files changed, 1256 insertions(+), 3 deletions(-)
+
+commit 82a368f258d933843ae4592ac42ec4009aafc06d
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Sat Apr 24 23:09:35 2010 +0900
+
+    Add the UI file in POTFILES.in
+
+ po/POTFILES.in |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit 4add3bdc54ea1fc6744df8be15c1fd4b27634f8d
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Thu Apr 22 23:25:54 2010 +0900
+
+    Fix DISPOSE_OP framename
+
+ src/file-apng.c |    3 +++
+ 1 files changed, 3 insertions(+), 0 deletions(-)
+
+commit f8d568889d5d9a5aa218f2bc91083d980cbc8792
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Thu Apr 22 22:18:36 2010 +0900
+
+    Change GETTEXT_PACKAGE to gimp20-apng-plugin
+
+ configure.in |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 67b13f3b964f6daae22a54050940281167bcef32
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Thu Apr 22 22:13:37 2010 +0900
+
+    Fix g_free()
+
+ src/file-apng.c |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit 19156a9b6b8aae63619327f3af1073ef92e21220
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Wed Apr 21 23:26:22 2010 +0900
+
+    Add help and locale register
+
+ configure.in    |    2 +-
+ src/file-apng.c |   12 ++++++++++++
+ 2 files changed, 13 insertions(+), 1 deletions(-)
+
+commit 6f487885acb292672064fa20ab95ee473615e4ba
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Wed Apr 21 23:20:37 2010 +0900
+
+    Fix incorrect ui directory
+
+ configure.in    |    8 +-------
+ src/file-apng.c |   10 ++--------
+ ui/Makefile.am  |    2 +-
+ 3 files changed, 4 insertions(+), 16 deletions(-)
+
+commit 47718a36a825bb66df305beb0b377173d9a05cc9
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Wed Apr 21 00:29:49 2010 +0900
+
+    Change default blend_op value
+
+ src/file-apng.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 72f583f0f63d620da6537af6b432989261f27d2f
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Wed Apr 21 00:10:40 2010 +0900
+
+    Fix compression-level default value
+
+ ui/plug-in-file-apng.ui |    5 ++++-
+ 1 files changed, 4 insertions(+), 1 deletions(-)
+
+commit 14e3d85f119e44dfcbf9006e4f9b1e679b2474cf
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Mon Apr 19 23:26:36 2010 +0900
+
+    Fix incorrect mnemonic_widget
+
+ ui/plug-in-file-apng.ui |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 409a21d90ed2a1fb76d58a508c5ec4c8a6eea79b
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Mon Apr 19 23:25:52 2010 +0900
+
+    Change defaults parasite name
+
+ src/file-apng.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit d0c08ff9c9d30d148ce3e339564861b960c541a6
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Mon Apr 19 23:24:18 2010 +0900
+
+    Add parse_delay_tag()
+
+ src/file-apng.c |   49 ++++++++++++++++++++++++++++++++++++-------------
+ 1 files changed, 36 insertions(+), 13 deletions(-)
+
+commit 6c3caf8b53895da153ba3c59ef2667f44a4ada73
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Sun Apr 18 23:12:54 2010 +0900
+
+    Add --with-plugins-install option
+
+ configure.in    |   32 ++++++++++++++++++++++++++++++++
+ src/Makefile.am |    2 +-
+ ui/Makefile.am  |    2 +-
+ 3 files changed, 34 insertions(+), 2 deletions(-)
+
+commit c745d2389ec74aa35e903dd240a5b5aa7a9d4f10
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Sun Apr 18 15:50:43 2010 +0900
+
+    Add blend_op to PngSaveVals
+
+ src/file-apng.c |    6 ++++--
+ 1 files changed, 4 insertions(+), 2 deletions(-)
+
+commit 0fba6fe72270ab11508d76b215d5292f8095d9e3
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Sun Apr 18 15:44:32 2010 +0900
+
+    Add item for first_frame_is_hidden
+
+ src/file-apng.c         |    9 ++++++++-
+ ui/plug-in-file-apng.ui |   27 +++++++++++++++++++++------
+ 2 files changed, 29 insertions(+), 7 deletions(-)
+
+commit d743f021b03a29c21f047ec814e3e9ae26de8307
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Wed Apr 14 22:58:31 2010 +0900
+
+    Update to link patched libpng
+
+ README          |   15 +++++++++++++++
+ configure.in    |   43 +++++++++++++++++++++++++++++++++++++++++++
+ src/Makefile.am |   12 ++++++++++--
+ 3 files changed, 68 insertions(+), 2 deletions(-)
+
+commit 80925d2b1a6af5a8cdc6148ee41b86ac7461095d
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Tue Apr 13 07:55:24 2010 +0900
+
+    Add ui directory
+
+ Makefile.am |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 0bdfe194e8951e35172016765f185c2d783dd303
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Mon Apr 12 00:38:48 2010 +0900
+
+    Reflect num_plays
+
+ src/file-apng.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit ca072757851833f356fd88052f271fbb1c77997f
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Mon Apr 12 00:31:10 2010 +0900
+
+    Use Glade + GtkBuilder for file-apng.c save_dialog()
+
+ configure.in            |    1 +
+ src/file-apng.c         |  272 +++++++++++++++++++++--------------------
+ ui/.gitignore           |    2 +
+ ui/Makefile.am          |    6 +
+ ui/plug-in-file-apng.ui |  315
+ +++++++++++++++++++++++++++++++++++++++++++++++
+ 5 files changed, 463 insertions(+), 133 deletions(-)
+
+commit c7ebefab4bbcf11c074ab597436dbfd1fead0561
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Sun Apr 11 17:39:17 2010 +0900
+
+    Fix typo
+
+ src/file-apng.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit a874dc9efe7bccda4bf9d0528e5e492817235772
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Sun Apr 11 16:42:33 2010 +0900
+
+    Add more #if defined(PNG_APNG_SUPPORTED)/#endif
+
+ src/file-apng.c |    4 ++++
+ 1 files changed, 4 insertions(+), 0 deletions(-)
+
+commit 12c0c88311932fe74b81ec00654169d3b02280c5
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Sun Apr 11 16:21:10 2010 +0900
+
+    More compatibility gtk_widget_is_sensitive()
+
+ src/file-apng.c |    6 ++++++
+ 1 files changed, 6 insertions(+), 0 deletions(-)
+
+commit 0fb90ed645070c216879cbcdc7f02aca0eda8b5a
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Mon Mar 29 00:34:31 2010 +0900
+
+    Add dispose_op to PngSaveVals
+
+ src/file-apng.c |    3 ++-
+ 1 files changed, 2 insertions(+), 1 deletions(-)
+
+commit ec13d59aad9c5c85098fa9c614dc82176225a9f0
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Mon Mar 29 00:30:32 2010 +0900
+
+    Add write_frame(), parse_ms_tag(), parse_dispose_op_tag() and save
+    an APNG image
+
+ src/file-apng.c |  350
+ +++++++++++++++++++++++++++++++++++++++++++-----------
+ 1 files changed, 278 insertions(+), 72 deletions(-)
+
+commit cf6862b7e5d7d3c4ceb741a4178e1081ecf6570c
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Sun Mar 28 18:51:16 2010 +0900
+
+    Fix free framename
+
+ src/file-apng.c |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit 89faff40c7b5eb4d255a4ce80a1b291f7cff6b17
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Sun Mar 28 15:54:48 2010 +0900
+
+    Add as_animation to PngSaveVals
+
+ src/file-apng.c |   61
+ +++++++++++++++++++++++++++++++++++-------------------
+ 1 files changed, 39 insertions(+), 22 deletions(-)
+
+commit bee8dbfde61d327faa9480377e273596378ccac9
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Wed Mar 24 20:55:56 2010 +0900
+
+    Fix typo
+
+ src/file-apng.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 0d67224198c30134680ce069d9d3b297334de7ee
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Mon Mar 22 22:53:27 2010 +0900
+
+    Add read_frame() and load an APNG image.
+
+ src/file-apng.c |  340
+ ++++++++++++++++++++++++++++++++++++++++---------------
+ 1 files changed, 248 insertions(+), 92 deletions(-)
+
+commit 2048d6941eaf872a0079b9f628e4c19d206f810d
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Mon Mar 22 22:51:53 2010 +0900
+
+    Bump to version 0.1.0
+
+ configure.in    |    4 ++--
+ src/file-apng.c |    2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+commit fcab52e9758be02d0abe256ffe19749d7fbf6098
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Mon Mar 22 14:00:21 2010 +0900
+
+    Add png_get_PLTE() block
+
+ src/file-apng.c |   30 ++++++++++++++++++------------
+ 1 files changed, 18 insertions(+), 12 deletions(-)
+
+commit b65abe2fab11457dde15b21c2fd175e6df7a5507
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Mon Mar 22 11:09:58 2010 +0900
+
+    Fix typo
+
+ src/file-apng.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 905b1c1401b53608da6a1fa33e95b462d74935d3
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Mon Mar 22 10:58:41 2010 +0900
+
+    Remove direct access to the info_struct members
+
+ src/file-apng.c |   64
+ +++++++++++++++++++++++++++++++------------------------
+ 1 files changed, 36 insertions(+), 28 deletions(-)
+
+commit 02d17603ae1d0760c5e76528a848d43f7cb450f9
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Sun Mar 21 22:28:12 2010 +0900
+
+    Bump to version 0.0.2
+
+ configure.in    |    2 +-
+ src/file-apng.c |    2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 54ddbc8685f0a2a73b999f038ca9d18ace2d60d4
+Author: Daisuke Nishikawa <daisuken at users.sourceforge.net>
+Date:   Sun Mar 21 18:16:44 2010 +0900
+
+    Initial revision.
+
+    APNG plug-in (src/file-apng.c) based on PNG plug-in in the GIMP code,
+    others based on GIMP and GIMP Plug-In Template.
+
+ .gitignore            |   10 +
+ AUTHORS               |    1 +
+ BUGS                  |    3 +
+ COPYING               |    1 +
+ HACKING               |    2 +
+ INSTALL               |    1 +
+ Makefile.am           |   35 +
+ NEWS                  |    6 +
+ README                |   19 +
+ TODO                  |    6 +
+ autogen.sh            |   17 +
+ configure.in          |  125 +++
+ help/.gitignore       |    1 +
+ help/Makefile.am      |    3 +
+ help/en/.gitignore    |    1 +
+ help/en/Makefile.am   |    9 +
+ help/en/gimp-help.xml |    4 +
+ help/en/index.html    |   23 +
+ po/Makefile.in.in     |    1 +
+ po/POTFILES.in        |    3 +
+ src/.gitignore        |    1 +
+ src/Makefile.am       |   21 +
+ src/file-apng.c       | 2089
+ +++++++++++++++++++++++++++++++++++++++++++++++++
+ src/plugin-intl.h     |   52 ++
+ 24 files changed, 2434 insertions(+), 0 deletions(-)
