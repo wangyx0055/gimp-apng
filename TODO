@@ -1,0 +1,6 @@
+- Load Default and Save Default for APNG options in save dialog
+- More APNG options in save dialog
+- DISPOSE_OP_PREVIOUS (same as GIF disposal method 3)
+- BLEND_OP_* (like as GIF transparent flag, but including alpha channel)
+- Fractional delay time like as 1001/30000 (delay_num/delay_den)
+- Write help and i18n

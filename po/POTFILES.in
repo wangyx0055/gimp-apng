@@ -1,0 +1,4 @@
+# List of source files containing translatable strings.
+
+src/file-apng.c
+ui/plug-in-file-apng.ui
