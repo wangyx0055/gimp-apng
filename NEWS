@@ -1,0 +1,14 @@
+APNG Plug-In for GIMP
+=====================
+
+Changes in 0.1.0
+
+ - Load the APNG file to an image
+ - Save the image has multiple layers to an APNG file
+ - Frame operations (delay time and disposal method)
+ - APNG options in save dialog (as animation, number of plays and first frame
+   is hidden)
+
+Changes in 0.0.1
+
+ - Initial revision
